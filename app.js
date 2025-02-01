@@ -31,7 +31,7 @@ async function getWeatherData(lat, lon) {
 
 async function geoCoordinates(city = "jaipur") {
     try {
-        const geocodingUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=5b9a06f18252e20650965bd2d608bd74`;
+        const geocodingUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=5b9a06f18252e20650965bd2d608bd74`;
         const response = await fetch(geocodingUrl);
         const data = await response.json();
 
