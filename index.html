@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather WebApp (FrontEnd)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="main">
+        <div class="error">
+            <p style="color: red; margin-bottom: 10px;">Enter Valid City</p>
+        </div>
+        <form action="#" class="search" id="search">
+            <input class="search-Input" id="search-Input" type="text" placeholder="Enter Your City" required>
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="location-unit">
+            <button id="location"> Live Location <i class="fa-solid fa-location-dot"></i></button>
+            <button id="unit"> &deg;F/&deg;C <i id="rotate" class=" fa-solid fa-rotate"></i> </button>
+        </div>
+            <div class="weather-info">
+                <h1 id="city">Rani Gaon</h1>
+                <p id="date">12 Feb 2025</p>
+                <hr>
+                <div class="weather-temp">
+                    <p id="temp">25 &deg;C </p>
+                    <p id="humidity">Humidity : 45%</p>
+                </div>
+                <hr>
+                <div class="weather-icon">
+                    <p id="icon-status">Cloudy</p>
+                    <div class="icon">
+                        <p id="icon"></p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
