@@ -1,6 +1,3 @@
-Here's a README file for your Weather WebApp project that follows the project description you provided:
-
----
 
 # Weather WebApp (Frontend)
 
